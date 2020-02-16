@@ -1,0 +1,53 @@
+// Thank you page //
+// .thankyou-body {
+
+// }
+
+.section-thankyou {
+    background-image: url('../img/bloody.gif');
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+}
+
+.thankyou {
+    top: 25%;
+    transform: translate(-50%, -25%);
+    position: absolute;
+    left: 50%;
+
+
+    &-header {
+        color: #fff;
+        font-size: 3rem;
+    }
+
+    &-link {
+        color: #fff;
+        font-size: 40px;
+        margin-top: 100px;
+        text-decoration: none;
+        color: rgb(167, 158, 158);
+    }
+}
+
+// .thankyou-gif {
+//     height: 500px;
+//     width: 500px;
+//     background-image: url('https://thumbs.gfycat.com/OblongInferiorCod-size_restricted.gif');
+// }
+
+
+// @keyframes fadeIn {
+//     from {
+//         opacity: 0;
+//         margin-top: 10rem;
+//     }
+
+//     to {
+//         opacity: 1;
+//         margin-top: 2rem;
+//     }
+// }
+
+// }
