@@ -124,6 +124,27 @@
     }
   }
 
+  p.resume-button {
+    font-size: 1.5rem;
+    border: 1px solid #757575;
+    padding: 10px;
+    margin: 3rem auto 0 auto;
+    width: 225px;
+    display: block;
+    text-align: center;
+    color: #000;
+    transition: all 1s;
+  }
+  
+p.resume-button:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+a {
+  text-decoration: none;
+}
+
   .resume-heading {
     @include sectionHeader;
     color: #000;
