@@ -439,15 +439,38 @@ li.logo {
   }
 }
 
-@media(max-width: 370px) {
+@media(max-width: 375px) {
 
   .section-main {
+    background: url('../img/mobile-bg.jpg') !important;
+
+    .slide1,
+    .slide2,
+    .slide3, 
+    .slide4, 
+    .slide5, 
+    .slide6, 
+    .slide7, 
+    .slide8 {
+        background-image: none;
+        background-repeat: no-repeat;
+        background-size: cover;
+        animation: none;
+        background-attachment: fixed;
+    }
+
+    .main-content {
+      top: 40%;
+    }
+
     h1.main-heading {
       font-size: 2rem;
+      width: 50%;
     }
 
     .main-content .social_icons {
-      margin: 20px 5px;
+      width: 50%;
+      margin: 40px auto;
     }
   }
 }

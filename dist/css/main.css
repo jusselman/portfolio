@@ -364,7 +364,7 @@ img.works-img {
     margin: 0 auto; } }
 
 .section-thankyou {
-  background-image: url("../img/bloody.gif");
+  background-image: url("../img/thankyou.jpg");
   background-size: cover;
   height: 100vh;
   text-align: center; }
@@ -860,11 +860,30 @@ li.logo {
   .section-main h1.main-heading {
     font-size: 3rem; } }
 
-@media (max-width: 370px) {
-  .section-main h1.main-heading {
-    font-size: 2rem; }
-  .section-main .main-content .social_icons {
-    margin: 20px 5px; } }
+@media (max-width: 375px) {
+  .section-main {
+    background: url("../img/mobile-bg.jpg") !important; }
+    .section-main .slide1,
+    .section-main .slide2,
+    .section-main .slide3,
+    .section-main .slide4,
+    .section-main .slide5,
+    .section-main .slide6,
+    .section-main .slide7,
+    .section-main .slide8 {
+      background-image: none;
+      background-repeat: no-repeat;
+      background-size: cover;
+      animation: none;
+      background-attachment: fixed; }
+    .section-main .main-content {
+      top: 40%; }
+    .section-main h1.main-heading {
+      font-size: 2rem;
+      width: 50%; }
+    .section-main .main-content .social_icons {
+      width: 50%;
+      margin: 40px auto; } }
 
 .section-about {
   height: auto;
