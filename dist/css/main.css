@@ -860,7 +860,7 @@ li.logo {
   .section-main h1.main-heading {
     font-size: 3rem; } }
 
-@media (max-width: 375px) {
+@media (max-width: 420px) {
   .section-main {
     background: url("../img/mobile-bg.jpg") !important; }
     .section-main .slide1,
@@ -912,6 +912,25 @@ li.logo {
     margin: 4rem auto;
     border-radius: 100%;
     display: block; }
+  .section-about #reveal1 {
+    opacity: 0;
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    transform: scale(0.9);
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out; }
+  .section-about #reveal1.visible {
+    opacity: 1;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+    transform: none; }
   .section-about p.description {
     font-size: 1.5rem;
     color: #5e5d5d;

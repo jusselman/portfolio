@@ -30,14 +30,9 @@ $(document).ready(function ($) {
       $('.navbar').css("background-color", "rgba(0,0,0,0)");
       $('.hamburger div').css("background-color", "#fff");
       $('.hamburger').css("border", "2px solid #fff");
-
-
-
-
     }
   });
 });
-
 
 // SMOOTH SCROLLING JQUERY //
 
@@ -111,4 +106,19 @@ function fadedSlide() {
   faded_elem.style.opacity = 1;
   setTimeout('fadedNext()', 6000);
 }
+
+// SMOOTH REVEAL // 
+
+var controller = new ScrollMagic.Controller();
+
+// build scene
+new ScrollMagic.Scene({
+  triggerElement: "#trigger1",
+  triggerHook: 0.9, // show, when scrolled 10% into view
+  duration: "80%", // hide 10% before exiting view (80% + 10% from bottom)
+  offset: 50 // move trigger to center of element
+})
+  .setClassToggle("#reveal1", "visible") // add class to reveal
+  // .addIndicators(false) // add indicators (requires plugin)
+  .addTo(controller);
 
