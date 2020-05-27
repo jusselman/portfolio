@@ -70,9 +70,9 @@ $(document).ready(function () {
 // SCROLL REVEAL //
 if (window.innerWidth > 769) {
   window.sr = ScrollReveal();
-  sr.reveal('.fadeInTop', {
-    duration: 2500,
-    origin: 'top',
+  sr.reveal('.fadeInLeft', {
+    duration: 1000,
+    origin: 'left',
     distance: '200px'
   });
   sr.reveal('.fadeInBottom', {

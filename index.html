@@ -35,7 +35,7 @@
         <li><a href="#main" class="scroll">Home</a></li>
         <li><a href="#about" class="scroll">About</a></li>
         <li><a href="#works" class="scroll">Works</a></li>
-        <li><a href="#resume" class="scroll">Résumé</a></li>
+        <li><a href="resume.html">Résumé</a></li>
         <li><a href="#contact" class="scroll">Contact</a></li>
       </div>
     </ul>
@@ -47,8 +47,8 @@
     </div>
     <a href="#main" class="scroll">Home</a>
     <a href="#about" class="scroll">About</a>
-    <a href="#resume" class="scroll">Résumé</a>
     <a href="#works" class="scroll">Works</a>
+    <a href="resume.html" class="scroll">Résumé</a>
     <a href="#contact" class="scroll">Contact</a>
   </div>
 
@@ -56,7 +56,6 @@
   <section class="section-main" id='main'>
     <div class="img-area">
       <div class="slide1"></div>
-      <div class="slide2"></div>
       <div class="slide3"></div>
       <div class="slide4"></div>
       <div class="slide5"></div>
@@ -70,9 +69,9 @@
 
 
       <!-- <div class="main-info"> -->
-      <h1 class="main-heading fadeInTop">JOSHUA USSELMAN</h1>
+      <h1 class="main-heading">JOSHUA USSELMAN</h1>
       <!-- PROFESSIONS FADING IN AND OUT -->
-      <h1 class="profession fadeInTop" id="profession"><span id="faded"></span></h1>
+      <h1 class="profession" id="profession"><span id="faded"></span></h1>
       <ul class="social_icons fadeInBottom">
         <li class="icon-outer">
           <a href="https://www.facebook.com/josue.uselmano">
@@ -106,9 +105,6 @@
   <!-- ABOUT SECTION -->
   <section class="section-about" id="about">
     <div class="about-container">
-      <!-- <div class="section-title">
-        <h1 class="about-heading">ABOUT</h1>
-      </div> -->
       <div id="trigger1"></div>
       <img class="profile-image" src="dist/img/profile.jpg" alt="profile" id="reveal1">
       <div class="about-description">
@@ -130,9 +126,24 @@
   <!-- WORKS SECTION -->
   <section class="section-works" id="works">
     <div class="section-title">
-      <h1 class="works-heading">WORKS</h1>
+      <h1 class="works-heading">Past Projects</h1>
+      <!-- <div id="trigger2"></div> -->
     </div>
-    <div class="works-container">
+    <div class="works-container fadeInLeft">
+      <div class="works-outer">
+        <a href="https://www.green-mister.com/">
+          <div class="works">
+            <img src="dist/img/mrgreen.png" class="works-img">
+            <div class="works-text">
+              <h2 class="works-title">Mister <br> Green</h2>
+            </div>
+          </div>
+        </a>
+        <div class="git-link">
+          <a class="works-git" href="https://github.com/jusselman">Github</a>
+        </div>
+      </div>
+
       <div class="works-outer">
         <a href="https://www.glaucomaspecialistsofsanfrancisco.com/">
           <div class="works">
@@ -177,125 +188,11 @@
     </div>
   </section>
 
-  <!-- RESUME SECTION -->
-  <section class="section-resume" id="resume">
-    <div class="section-title">
-      <h1 class="resume-heading">RÉSUMÉ</h1>
-    </div>
-    <div class="resume-container">
-      <div class="resume-education">
-        <h1 class="education-header">EDUCATION</h1>
-        <div class="wrapper">
-          <div class="res-date">
-            <p><span class="darker">Jul, 2019 - Oct, 2019</span></p>
-          </div>
-          <div class="res-prog">
-            <h1>IMMERSIVE SOFTWARE ENGINEERING</h1>
-          </div>
-          <div class="res-place">
-            <p><span class="darker">GENERAL ASSEMBLY</span></p>
-          </div>
-          <div class="res-desc">
-            <p class="res-content">● Immersive software engineering program focused on MERN full stack development
-              ● Designed applications cross-functionally between front-end design and back-end models
-              ● Collaborated with team to produce professional quality software </p>
-          </div>
-        </div>
-        <div class="wrapper">
-          <div class="res-date">
-            <p><span class="darker">Oct, 2017 - Jan, 2018</span></p>
-          </div>
-          <div class="res-prog">
-            <h1>WEB DEVELOPMENT</h1>
-          </div>
-          <div class="res-place">
-            <p><span class="darker">CODIFY ACADEMY</span></p>
-          </div>
-          <div class="res-desc">
-            <p class="res-content">Web Development bootcamp</p>
-          </div>
-        </div>
-        <div class="wrapper">
-          <div class="res-date">
-            <p><span class="darker">Sep, 2003 - Jun, 2007</span></p>
-          </div>
-          <div class="res-prog">
-            <h1>BA SPANISH</h1>
-          </div>
-          <div class="res-place">
-            <p><span class="darker">University of Oregon</span></p>
-          </div>
-          <div class="res-desc">
-            <p class="res-content">Bachelor's of Arts in Spanish</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="resume-professional">
-        <h1 class="professional-header">PROFESSIONAL</h1>
-        <div class="wrapper">
-          <div class="res-date">
-            <p><span class="darker">Apr, 2018 - Jul, 2019</span></p>
-          </div>
-          <div class="res-prog">
-            <h1>WEB DEVELOPER</h1>
-          </div>
-          <div class="res-place">
-            <p><span class="darker">FREELANCE</span></p>
-          </div>
-          <div class="res-desc">
-            <p class="res-content">● Consulted with clients to outline website goals,
-              illustrate wire frame, and site functionality ● Maintained websites by
-              updating content, implementing new technology and monitoring performance
-            </p>
-          </div>
-        </div>
-        <div class="wrapper">
-          <div class="res-date">
-            <p><span class="darker">Dec, 2014 - Apr, 2018</span></p>
-          </div>
-          <div class="res-prog">
-            <h1>EVENT DIRECTOR</h1>
-          </div>
-          <div class="res-place">
-            <p><span class="darker">DRISCOLL'S VALENCIA ST MORTUARY</span></p>
-          </div>
-          <div class="res-desc">
-            <p class="res-content">● Held meetings with grieving families in order to plan funeral arrangements ●
-              Maintained correspondence
-              with county clerks, health departments, various consulates, the California Secretary
-              of State and receiving funeral establishments in foreign countries</p>
-          </div>
-        </div>
-        <div class="wrapper">
-          <div class="res-date">
-            <p><span class="darker">Sep, 2012 - Nov, 2014</span></p>
-          </div>
-          <div class="res-prog">
-            <h1>MANAGER</h1>
-          </div>
-          <div class="res-place">
-            <p><span class="darker">Hotel Posada 911</span></p>
-          </div>
-          <div class="res-desc">
-            <p class="res-content">● Directed guest services including greeting, billing, and
-              providing tourist information for globally diverse clientele</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div>
-      <a href="resume.html" class="resume-button">
-        <p class="resume-button">RÉSUMÉ PDF</p>
-      </a>
-    </div>
-  </section>
-
   <!-- CONTACT SECTION -->
   <section class="section-contact" id="contact">
     <div class="contact-container">
       <div class="section-title">
-        <h1 class="contact-heading">CONTACT</h1>
+        <h1 class="contact-heading">Contact</h1>
       </div>
       <div class="contact-wrapper">
         <form class="contact-form" action="contactform.php" method="post">
