@@ -10,7 +10,8 @@ $works-bg: rgb(179, 179, 179);
 
 @mixin headerBar {
   position: absolute;
-  left: calc(50% - 28px);
+  left: 50%;
+  transform: translateX(-50%);
   width: 70px;
   height: 2px;
   content: '';

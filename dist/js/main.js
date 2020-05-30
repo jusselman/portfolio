@@ -41,12 +41,12 @@ $(document).ready(function () {
   var scrollLink = $('.scroll');
 
   // Smooth scrolling
-  scrollLink.click(function (event) {
-    event.preventDefault();
-    $('body,html').animate({
-      scrollTop: $(this.hash).offset().top
-    }, 1250);
-  });
+  // scrollLink.click(function (event) {
+  //   event.preventDefault();
+  //   $('body,html').animate({
+  //     scrollTop: $(this.hash).offset().top()
+  //   }, 1250);
+  // });
 
   // Active link switching
   $(window).scroll(function () {
@@ -54,13 +54,13 @@ $(document).ready(function () {
 
     scrollLink.each(function () {
 
-      var sectionOffset = $(this.hash).offset().top;
+      var sectionOffset = $(this.hash).offset();
 
       if (sectionOffset <= scrollbarLocation) {
         $(this).parent().addClass('active');
-        // $(this).parent().addClass('active::before');
+        $(this).parent().addClass('active::before');
         $(this).parent().siblings().removeClass('active');
-        // $(this).parent().siblings().removeClass('active::before');
+        $(this).parent().siblings().removeClass('active::before');
       }
     })
   })
@@ -116,7 +116,7 @@ new ScrollMagic.Scene({
   triggerElement: "#trigger1",
   triggerHook: 0.9, // show, when scrolled 10% into view
   duration: "80%", // hide 10% before exiting view (80% + 10% from bottom)
-  offset: 50 // move trigger to center of element
+  offset: 90 // move trigger to center of element
 })
   .setClassToggle("#reveal1", "visible") // add class to reveal
   // .addIndicators(false) // add indicators (requires plugin)

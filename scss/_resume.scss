@@ -135,15 +135,15 @@
     color: #000;
     transition: all 1s;
   }
-  
-p.resume-button:hover {
-  color: #fff;
-  background-color: #000;
-}
 
-a {
-  text-decoration: none;
-}
+  p.resume-button:hover {
+    color: #fff;
+    background-color: #000;
+  }
+
+  a {
+    text-decoration: none;
+  }
 
   .resume-heading {
     @include sectionHeader;
@@ -201,4 +201,10 @@ a {
   h1.professional-header:after {
     left: calc(50% - 25px) !important;
   }
+}
+
+// Mobile resume //
+.resume-mobile {
+  background-image: url('dist/img/resume.png');
+  width: 100%;
 }

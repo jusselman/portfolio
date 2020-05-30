@@ -80,6 +80,13 @@ img.works-img {
   display: block;
 }
 
+@media (max-width:481px) {
+  img.works-img {
+    height: 225px;
+    width: 225px;
+  }
+}
+
 .works-text {
   top: 50%;
   left: 50%;
@@ -160,6 +167,9 @@ img.works-img {
   }
 }
 
+
+
+
 @media(max-width: 1700px) {
   .works-container {
     width: 80%;
@@ -175,5 +185,11 @@ img.works-img {
 @media(max-width:1350px) {
   .works-container {
     margin: 0 auto;
+  }
+}
+
+@media (max-width: 481px) {
+  .works-git {
+    font-size: 1rem !important;
   }
 }

@@ -116,7 +116,7 @@
 
 }
 
-@media(max-width:450px) {
+@media(max-width:481px) {
   .contact-input {
     min-width: 0 !important;
     text-align: center;
@@ -125,6 +125,30 @@
 
   .section-contact {
     padding-bottom: 50px !important;
+  }
+
+  .section-contact .contact-wrapper {
+    margin-top: 1rem;
+  }
+
+  .section-contact .contact-form h1 {
+    font-size: 1rem;
+  }
+
+  .contact-button {
+    font-size: 1rem !important;
+    padding: 4px !important;
+    width: 20% !important;
+  }
+
+  .section-contact .contact-input {
+    width: 75%;
+    padding: 10px;
+    height: 1.25rem;
+  }
+
+  textarea.contact-input {
+    height: 75px !important;
   }
 
 }

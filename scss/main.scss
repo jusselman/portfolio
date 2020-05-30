@@ -321,7 +321,7 @@ li.logo {
   background-image: url(../img/bg1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  animation: fade1 64s infinite;
+  animation: fade1 32s infinite;
   background-attachment: fixed;
 }
 
@@ -329,7 +329,7 @@ li.logo {
   background-image: url(../img/bg2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  animation: fade2 64s infinite;
+  animation: fade2 32s infinite;
   background-attachment: fixed;
 }
 
@@ -337,7 +337,7 @@ li.logo {
   background-image: url(../img/bg3.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  animation: fade3 64s infinite;
+  animation: fade3 32s infinite;
   background-attachment: fixed;
 }
 
@@ -345,7 +345,7 @@ li.logo {
   background-image: url(../img/bg4.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  animation: fade4 64s infinite;
+  animation: fade4 32s infinite;
   background-attachment: fixed;
 }
 
@@ -353,7 +353,7 @@ li.logo {
   background-image: url(../img/bg5.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  animation: fade5 64s infinite;
+  animation: fade5 32s infinite;
   background-attachment: fixed;
 }
 
@@ -361,7 +361,7 @@ li.logo {
   background-image: url(../img/bg6.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  animation: fade6 64s infinite;
+  animation: fade6 32s infinite;
   background-attachment: fixed;
 }
 
@@ -369,7 +369,7 @@ li.logo {
   background-image: url(../img/bg7.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  animation: fade7 64s infinite;
+  animation: fade7 32s infinite;
   background-attachment: fixed;
 }
 
@@ -377,7 +377,7 @@ li.logo {
   background-image: url(../img/bg8.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  animation: fade8 64s infinite;
+  animation: fade8 32s infinite;
   background-attachment: fixed;
 }
 
@@ -769,6 +769,7 @@ li.logo {
   background: #fff;
   overflow: hidden;
   padding-bottom: 100px;
+  position: relative;
 
   .about-container {
     width: 50%;
@@ -795,6 +796,198 @@ li.logo {
     margin: 4rem auto;
     border-radius: 100%;
     display: block;
+    position: sticky;
+    z-index: 998;
+  }
+
+  @media (max-width:1200px) {
+    img.profile-image {
+      height: 300px;
+      width: 300px;
+    }
+  }
+
+  @media (max-width:1024px) {
+    img.profile-image {
+      height: 250px;
+      width: 250px;
+    }
+  }
+
+  @media (max-width:769px) {
+    img.profile-image {
+      height: 225px;
+      width: 225px;
+    }
+  }
+
+  @media (max-width:481px) {
+    img.profile-image {
+      margin: 0 auto;
+    }
+  }
+
+  img.pride-image {
+    position: absolute;
+    left: 15%;
+    top: 5%;
+    height: 200px;
+  }
+
+  @media (max-width:1200px) {
+    img.pride-image {
+      left: 5%;
+    }
+  }
+
+  @media (max-width:769px) {
+    img.pride-image {
+      height: 125px !important;
+    }
+  }
+
+  img.nature-image {
+    position: absolute;
+    right: 15%;
+    top: 5%;
+    height: 200px;
+  }
+
+  @media (max-width:1200px) {
+    img.nature-image {
+      right: 5%;
+    }
+  }
+
+  @media (max-width:1024px) {
+    img.nature-image {
+      height: 125px !important;
+    }
+  }
+
+  @media (max-width:1024px) {
+
+    img.nature-image,
+    img.pride-image {
+      height: 150px;
+    }
+  }
+
+  img.bird-image {
+    position: absolute;
+    left: 25%;
+    top: 30%;
+    height: 175px;
+  }
+
+  @media (max-width:1200px) {
+    img.bird-image {
+      left: 15%;
+    }
+  }
+
+  img.graduation-image {
+    position: absolute;
+    right: 25%;
+    top: 30%;
+    height: 175px;
+  }
+
+  @media (max-width:1024px) {
+
+    img.bird-image,
+    img.graduation-image {
+      height: 125px;
+    }
+  }
+
+  @media (max-width:769px) {
+
+    img.bird-image,
+    img.graduation-image {
+      height: 100px;
+    }
+  }
+
+  @media (max-width:1200px) {
+    img.graduation-image {
+      right: 15%;
+    }
+  }
+
+  img.march-image {
+    position: absolute;
+    left: 30%;
+    top: 5%;
+    height: 125px;
+  }
+
+  @media (max-width:1200px) {
+    img.march-image {
+      left: 25%;
+    }
+  }
+
+  @media (max-width:769px) {
+    img.march-image {
+      top: 0;
+      left: 28%;
+    }
+  }
+
+  img.snake-image {
+    position: absolute;
+    right: 30%;
+    top: 5%;
+    height: 125px;
+  }
+
+  @media (max-width:1200px) {
+    img.snake-image {
+      right: 25%;
+    }
+  }
+
+  @media (max-width:769px) {
+    img.snake-image {
+      top: 0;
+      right: 28%;
+    }
+  }
+
+  @media (max-width:1024px) {
+
+    img.snake-image,
+    img.march-image {
+      height: 100px;
+    }
+  }
+
+  @media (max-width:769px) {
+    img.snake-image {
+      top: 0;
+      right: 28%;
+    }
+  }
+
+  @media (max-width:769px) {
+
+    img.snake-image,
+    img.march-image {
+      height: 75px;
+    }
+  }
+
+  @media (max-width:481px) {
+
+    img.nature-image,
+    img.pride-image,
+    img.snake-image,
+    img.march-image,
+    img.bird-image,
+    img.graduation-image {
+      display: none;
+    }
   }
 
   // smooth reveal stylings //
@@ -829,17 +1022,6 @@ li.logo {
     word-spacing: 2;
   }
 
-  img.grapes {
-    height: 275px;
-    width: 200px;
-    margin-top: 50px;
-    margin-bottom: 75px;
-    margin-right: auto;
-    margin-left: auto;
-    display: block;
-    position: relative;
-  }
-
   @media(max-width:1600px) {
     .about-container {
       width: 60%;
@@ -856,14 +1038,7 @@ li.logo {
     }
   }
 
-  @media(max-width: 576px) {
-    img.profile-image {
-      height: 300px;
-      width: 300px;
-      margin: 20px auto !important;
 
-    }
-  }
 
   @media(max-width: 375px) {
     img.profile-image {
@@ -975,7 +1150,39 @@ footer {
 }
 
 
-@media(max-width:450px) {
+@media(max-width:481px) {
+  nav {
+    height: 70px !important;
+  }
+
+  .navbar ul .nav-left {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .hamburger {
+    padding: 3px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+  }
+
+  .hamburger>div {
+    height: 2px;
+    width: 40px;
+    background-color: #fff;
+    margin-bottom: 8px;
+    margin-top: 8px;
+  }
+
+  li.logo {
+    font-size: 1rem;
+    top: 50%;
+  }
+
   section {
     padding-bottom: 50px !important;
   }
@@ -988,13 +1195,8 @@ footer {
     margin: 0 15px;
   }
 
-  .section-about img.grapes {
-    margin-top: 25px;
-    margin-bottom: 25px;
-  }
-
   .section-about p.description {
-    font-size: 1.25rem;
+    font-size: 1rem;
   }
 
   .section-resume .resume-container .wrapper {
@@ -1009,12 +1211,16 @@ footer {
   .section-works h1.works-heading,
   .section-contact .contact-heading,
   .section-resume .resume-heading {
-    font-size: 2.5rem !important;
-    margin-top: 3.5rem !important;
+    font-size: 1.5rem !important;
+    margin-top: 2rem !important;
   }
 
   .section-about .profile-image {
-    margin: 100px !important;
+    margin: 25px auto !important;
+  }
+
+  footer {
+    height: 230px;
   }
 
   footer .footer-container-2 .footer_social_icons a {
@@ -1024,5 +1230,21 @@ footer {
   footer .footer-container .footer2::after {
     width: 100%;
     left: 0;
+  }
+
+  footer h1.footer1 {
+    font-size: 1.25rem;
+  }
+
+  footer p.footer3 {
+    font-size: .75rem;
+  }
+
+  .footer_social_icons {
+    margin-top: 20px !important;
+  }
+
+  footer a.footer-media {
+    font-size: .5rem;
   }
 }
