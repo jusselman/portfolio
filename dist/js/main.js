@@ -58,9 +58,9 @@ $(document).ready(function () {
 
       if (sectionOffset <= scrollbarLocation) {
         $(this).parent().addClass('active');
-        $(this).parent().addClass('active::before');
+        // $(this).parent().addClass('active::before');
         $(this).parent().siblings().removeClass('active');
-        $(this).parent().siblings().removeClass('active::before');
+        // $(this).parent().siblings().removeClass('active::before');
       }
     })
   })
