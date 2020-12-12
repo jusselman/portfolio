@@ -1,5 +1,4 @@
 // CONTACT SECTION //
-
 .section-contact {
   height: auto;
   width: 100%;
@@ -9,7 +8,7 @@
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
-  padding-bottom: 250px;
+  padding-bottom: 2.5rem;
 
   .contact-heading {
     @include sectionHeader;
@@ -39,7 +38,7 @@
 
   .contact-form h1 {
     color: #fff;
-    font-size: 2rem;
+    font-size: 16px;
     margin-bottom: 25px;
   }
 
@@ -47,14 +46,12 @@
     display: grid;
   }
 
-
   .contact-input {
     width: 100%;
     padding: 10px;
     height: 3.25rem;
     margin: 0 auto;
     font-family: 'Raleway', sans-serif;
-    font-size: 1rem;
     min-width: 375px;
   }
 
@@ -68,7 +65,7 @@
     color: #000;
     transition: all 1s;
     border: none;
-    font-size: 1.5rem;
+    font-size: 16px;
     padding: 8px;
     font-family: 'Raleway', sans-serif;
   }

@@ -17,7 +17,7 @@ $(document).ready(function ($) {
   $(window).scroll(function () {
     if ($(this).scrollTop() > 85) {
       // $('.navbar').css("backgroundColor","rbga(0,0,0,0)");
-      $('.navbar li').css("color", "#000");
+      $('.navbar p').css("color", "#000");
       $('.navbar li a').css("color", "#000");
       $('.navbar').css("background-color", "#fff");
       $('.hamburger div').css("background-color", "#000");
@@ -25,7 +25,7 @@ $(document).ready(function ($) {
 
 
     } else {
-      $('.navbar li').css("color", "#fff");
+      $('.navbar p').css("color", "#fff");
       $('.navbar li a').css("color", "#fff");
       $('.navbar').css("background-color", "rgba(0,0,0,0)");
       $('.hamburger div').css("background-color", "#fff");

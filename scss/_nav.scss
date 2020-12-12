@@ -1,68 +1,77 @@
 // NAVBAR //
 .hamburger {
-    padding: 5px;
-    border: 2px solid #fff;
-    margin-right: 60px;
-    margin-top: -2px;
+    padding: 1px;
+    border: 1px solid #fff;
+    margin-right: 25px;
+    // margin-top: -6px;
+    position: absolute;
+    right: 20px;
+    display: none;
+    padding: 3px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .hamburger>div {
-    height: 3px;
-    width: 50px;
+    height: 1px;
+    width: 25px;
     background-color: #fff;
-    margin-bottom: 10px;
-    margin-bottom: 8px;
-    margin-top: 8px;
+    margin-bottom: 4px;
+    margin-top: 4px;
 }
 
 .navbar {
     background-color: rgba(0, 0, 0, 0);
     overflow: hidden;
-    height: 80px;
+    height: 50px;
     border-bottom: 1px solid #fff;
     position: fixed;
     width: 100%;
     transition: .5s;
     z-index: 999;
+    display: flex;
 }
 
 .navbar a {
-    float: right;
+    // float: right;
     display: inline;
     color: #fff;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 16px;
     transition: all .5s;
 }
 
 .navbar-nav {
-    max-width: 1170px;
-    margin: 0 auto;
+    display: flex;
+    list-style-type: none;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 75px;
 }
 
-li.logo {
+p.logo {
     display: flex;
     justify-content: flex-start;
-    font-size: 1.5rem;
+    align-items: center;
+    font-size: 16px;
     margin-left: 75px;
     color: #fff;
     transition: .5s;
 }
 
-.navbar ul .nav-left {
-    margin: 25px 0 0 0;
+.nav-left {
     list-style: none;
     display: flex;
-    justify-content: flex-start;
 }
 
 .navbar ul .nav-right {
-    margin: -40px 75px 0 0;
+    // margin: -40px 75px 0 0;
     list-style: none;
-    display: flex;
-    justify-content: flex-end;
+    flex-direction: row;
 }
 
 .navbar a:hover {
@@ -86,7 +95,7 @@ li.logo {
 .side-nav a {
     padding: 20px 0 20px 0;
     text-decoration: none;
-    font-size: 22px;
+    font-size: 16px;
     color: #ccc;
     display: block;
     text-align: center;
@@ -112,8 +121,14 @@ li.logo {
 }
 
 @media(max-width:900px) {
-    .navbar ul .nav-right {
+
+    .nav-left,
+    .navbar-nav {
         display: none;
+    }
+
+    .hamburger {
+        display: inline-block;
     }
 }
 
@@ -147,7 +162,7 @@ li.logo {
 
 @media(max-width:481px) {
     nav {
-        height: 70px !important;
+        border-bottom: none !important;
     }
 
     .navbar ul .nav-left {
@@ -157,29 +172,13 @@ li.logo {
         transform: translateY(-50%);
     }
 
-    .hamburger {
-        padding: 3px;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        right: 20px;
-    }
+    .hamburger {}
 
-    .hamburger>div {
-        height: 2px;
-        width: 40px;
-        background-color: #fff;
-        margin-bottom: 8px;
-        margin-top: 8px;
-    }
+
 
     li.logo {
         font-size: 1rem;
         top: 50%;
-    }
-
-    section {
-        padding-bottom: 50px !important;
     }
 
     .section-about p.resume-button {
@@ -208,10 +207,6 @@ li.logo {
     .section-resume .resume-heading {
         font-size: 1.5rem !important;
         margin-top: 2rem !important;
-    }
-
-    .section-about .profile-image {
-        margin: 25px auto !important;
     }
 
     footer {

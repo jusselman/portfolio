@@ -7,14 +7,19 @@
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
-  padding-bottom: 5rem;
+  padding-bottom: 2.5rem;
 }
 
 h1.works-heading {
   @include sectionHeader;
+  font-size: 2.5rem;
+  top: 5rem;
+  text-align: center;
+  margin-top: 3rem;
   color: #fff;
   text-align: center;
 }
+
 
 .section-title::after {
   @include headerWorks;
@@ -78,6 +83,13 @@ img.works-img {
   height: 300px;
   width: 300px;
   display: block;
+}
+
+@media (max-width:769px) {
+  img.works-img {
+    height: 250px;
+    width: 250px;
+  }
 }
 
 @media (max-width:481px) {
